@@ -9,28 +9,28 @@ export default defineConfig({
     tailwindcss(),
     VitePWA({
       registerType: 'autoUpdate',
-      includeAssets: ['favicon.svg', 'pwa-icon.svg'],
+      includeAssets: ['app-icon.png'],
       manifest: {
         name: 'Генератор иконок для приложений',
         short_name: 'App Icons',
         description:
           'Создайте полный набор иконок всех размеров из одного изображения — полностью офлайн',
-        theme_color: '#f8fafc',
-        background_color: '#f8fafc',
+        theme_color: '#1a1a1a',
+        background_color: '#1a1a1a',
         display: 'standalone',
         lang: 'ru',
         start_url: '/',
         icons: [
           {
-            src: 'pwa-icon.svg',
-            sizes: 'any',
-            type: 'image/svg+xml',
+            src: 'app-icon.png',
+            sizes: '512x512',
+            type: 'image/png',
             purpose: 'any',
           },
           {
-            src: 'pwa-icon.svg',
-            sizes: 'any',
-            type: 'image/svg+xml',
+            src: 'app-icon.png',
+            sizes: '512x512',
+            type: 'image/png',
             purpose: 'maskable',
           },
         ],

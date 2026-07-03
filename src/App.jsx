@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useMemo, useState } from 'react'
-import { FiDownload, FiRefreshCw, FiGrid } from 'react-icons/fi'
+import { FiDownload, FiRefreshCw } from 'react-icons/fi'
 import ImageUploader from './components/ImageUploader'
 import OptionsPanel from './components/OptionsPanel'
 import IconGrid from './components/IconGrid'
@@ -112,9 +112,11 @@ export default function App() {
     <div className="min-h-screen">
       <header className="border-b border-slate-200 bg-white">
         <div className="mx-auto flex max-w-6xl items-center gap-3 px-4 py-5 sm:px-6">
-          <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-indigo-600 text-white">
-            <FiGrid className="h-5 w-5" />
-          </div>
+          <img
+            src="/app-icon.png"
+            alt=""
+            className="h-10 w-10 rounded-xl"
+          />
           <div>
             <h1 className="text-lg font-bold text-slate-900 sm:text-xl">
               Генератор иконок для приложений
